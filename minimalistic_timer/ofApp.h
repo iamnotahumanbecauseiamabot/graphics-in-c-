@@ -9,6 +9,7 @@ class ofApp : public ofBaseApp{
 		void draw();
 		float frameRateForCapture;  
         float lastTime;
+        ofSoundPlayer mySound;
         string text;
         string text_0;
         int timer_value;

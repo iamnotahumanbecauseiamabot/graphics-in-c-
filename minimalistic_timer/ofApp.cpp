@@ -15,6 +15,9 @@ lastTime = ofGetElapsedTimef();
 frameRateForCapture = 1; // 30 fps
 //centre_of_width = ofGetWidth()/2;
 //centre_of_height = ofGetHeight()/2;
+mySound.load("tick.mp3");
+mySound.setLoop(true); //Sound will loop
+mySound.play();
 }
 
 //--------------------------------------------------------------
@@ -27,6 +30,7 @@ if (currentTime - lastTime > timePerFrame){
   text = to_string(timer_value--);
   }
   else{
+  mySound.stop();
   text = "";
   text_0="Bruh Stop.";
   }
