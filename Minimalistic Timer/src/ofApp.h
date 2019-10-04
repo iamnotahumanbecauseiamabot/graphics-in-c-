@@ -12,6 +12,7 @@ class ofApp : public ofBaseApp{
         ofSoundPlayer mySound;
         string text;
         string text_0;
+        int release;
         int timer_value;
         int centre_of_width;
         int centre_of_height;
